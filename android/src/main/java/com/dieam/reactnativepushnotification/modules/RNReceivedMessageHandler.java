@@ -185,7 +185,7 @@ public class RNReceivedMessageHandler {
         if (config.getNotificationForeground() || !isForeground) {
             Log.v(LOG_TAG, "sendNotification: " + bundle);
 
-            pushNotificationHelper.sendToNotificationCentre(bundle);
+            //pushNotificationHelper.sendToNotificationCentre(bundle); //duplicating notfications when app is in killed state, hence commented..
         }
     }
 
